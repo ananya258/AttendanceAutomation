@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Apply Leave</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Apply Leave</h1>
+
+<select id="leaveType">
+    <option>Sick Leave</option>
+    <option>Casual Leave</option>
+    <option>Emergency Leave</option>
+</select>
+
+<br><br>
+
+<input type="date" id="startDate">
+
+<br><br>
+
+<input type="date" id="endDate">
+
+<br><br>
+
+<textarea id="reason" placeholder="Reason"></textarea>
+
+<br><br>
+
+<button onclick="applyLeave()">
+    Submit Leave
+</button>
+
+<p id="leaveMessage"></p>
+
+</body>
+
+<script src="script.js"></script>
+</html>

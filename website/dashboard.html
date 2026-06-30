@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Dashboard</h1>
+
+<button id="attendanceBtn" onclick="markAttendance()">
+    Mark Attendance
+</button>
+
+<p id="attendanceMessage"></p>
+
+<br><br>
+
+<button id="leaveBtn"
+        onclick="window.location.href='leave.html'">
+    Apply Leave
+</button>
+
+<br><br>
+
+<button id="leaveStatusBtn"
+        onclick="window.location.href='leave_status.html'">
+    View Leave Status
+</button>
+
+<br><br>
+
+<button id="adminBtn"
+        onclick="window.location.href='admin.html'">
+    Admin Panel
+</button>
+
+<br><br>
+
+<button id="logoutBtn"
+        onclick="logout()">
+    Logout
+</button>
+
+<script src="script.js"></script>
+
+<script>
+if(localStorage.getItem("loggedIn") !== "true"){
+    window.location.href = "login.html";
+}
+</script>
+
+</body>
+</html>
